@@ -9,7 +9,7 @@ import UIKit
 
 class AppCoordinator {
     
-    private (set) var rootViewController: UIViewController    
+    private (set) var rootViewController: UIViewController
     private (set) var topViewController: UIViewController?
     
     init(with viewController: UIViewController) {
@@ -17,15 +17,18 @@ class AppCoordinator {
     }
     
     func showOnboarding() {
-        
+        let onboardingVC = OnboardingViewController()
+        topViewController = onboardingVC
     }
     
     func showPlacesList() {
-        
+        let placesViewController = PlacesListViewController()
+        topViewController = placesViewController
     }
     
     func showPlaceDetails() {
-        
+        let placeDetailsViewController = PlaceDetailsViewController()
+        topViewController = placeDetailsViewController
     }
     
 }
