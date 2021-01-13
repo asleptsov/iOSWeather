@@ -21,6 +21,13 @@ class WheatherTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+//        testAppAssembler()
+        
+        // App assembler
+        let assembler = AppAssembler()
+        assembler.assemble(with: .normal)
+        
     }
 
     func testPerformanceExample() throws {
@@ -30,4 +37,7 @@ class WheatherTests: XCTestCase {
         }
     }
 
+    func testAppAssembler() throws {
+        
+    }
 }
