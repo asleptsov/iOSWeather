@@ -39,22 +39,5 @@ class WheatherTests: XCTestCase {
         }
     }
 
-    func testAppAssembler() throws {
-        
-    }
-    
-    func testAppCoordinator() throws {
-        let rootViewController = UIViewController()
-        let sut = AppCoordinator(with: rootViewController)
-        XCTAssert(sut.rootViewController == rootViewController, "Root view controller is incorrect")
 
-        sut.showOnboarding()
-        XCTAssert(sut.topViewController is OnboardingViewController, "Top view controller should be OnboardingViewController")
-        
-        sut.showPlacesList()
-        XCTAssert(sut.topViewController is PlacesListViewController, "Top view controller should be PlacesListViewController")
-        
-        sut.showPlaceDetails()
-        XCTAssert(sut.topViewController is PlaceDetailsViewController, "Top view controller should be PlaceDetailsViewController")
-    }
 }
