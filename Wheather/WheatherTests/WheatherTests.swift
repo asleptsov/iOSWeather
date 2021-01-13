@@ -5,6 +5,8 @@
 //  Created by Anton Sleptsov on 13.01.2021.
 //
 
+import UIKit
+
 import XCTest
 @testable import Wheather
 
@@ -39,5 +41,12 @@ class WheatherTests: XCTestCase {
 
     func testAppAssembler() throws {
         
+    }
+    
+    func testAppCoordinator() throws {
+        let rootViewController = UIViewController()
+        let sut = AppCoordinator(with: rootViewController)
+        XCTAssert(sut.rootViewController == rootViewController,
+                  "Root view controller is incorrect")
     }
 }
