@@ -5,9 +5,16 @@
 //  Created by Anton Sleptsov on 13.01.2021.
 //
 
-import Foundation
+import UIKit
 
 class AppCoordinator {
+    
+    private (set) var rootViewController: UIViewController    
+    private (set) var topViewController: UIViewController?
+    
+    init(with viewController: UIViewController) {
+        self.rootViewController = viewController
+    }
     
     func showOnboarding() {
         
