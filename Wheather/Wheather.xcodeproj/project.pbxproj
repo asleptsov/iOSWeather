@@ -10,7 +10,6 @@
 		6C6BFE5625AF17EF00D49D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFE5525AF17EF00D49D3E /* AppDelegate.swift */; };
 		6C6BFE5F25AF17F000D49D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BFE5E25AF17F000D49D3E /* Assets.xcassets */; };
 		6C6BFE6225AF17F000D49D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BFE6025AF17F000D49D3E /* LaunchScreen.storyboard */; };
-		6C6BFE6D25AF17F000D49D3E /* WheatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFE6C25AF17F000D49D3E /* WheatherTests.swift */; };
 		6C6BFE7825AF17F000D49D3E /* WheatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFE7725AF17F000D49D3E /* WheatherUITests.swift */; };
 		6C6BFE9F25AF345C00D49D3E /* AssembleMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFE9E25AF345C00D49D3E /* AssembleMode.swift */; };
 		6C6BFEA425AF349B00D49D3E /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEA325AF349B00D49D3E /* AppAssembler.swift */; };
@@ -27,6 +26,9 @@
 		6C6BFEE925B6D2C100D49D3E /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEE825B6D2C100D49D3E /* WeatherRepository.swift */; };
 		6C6BFEEE25B6D36400D49D3E /* MockWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEED25B6D36400D49D3E /* MockWeatherRepository.swift */; };
 		6C6BFEF625B6D44C00D49D3E /* MockWeatherRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEF525B6D44C00D49D3E /* MockWeatherRepositoryTests.swift */; };
+		6C6BFEFB25B6DC7600D49D3E /* AssemblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEFA25B6DC7600D49D3E /* AssemblerTests.swift */; };
+		6C6BFF0325B6DEB900D49D3E /* OnlineWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFF0225B6DEB900D49D3E /* OnlineWeatherRepository.swift */; };
+		6C6BFF0825B6DEE500D49D3E /* OnlinePlacesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFF0725B6DEE500D49D3E /* OnlinePlacesRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,6 @@
 		6C6BFE6125AF17F000D49D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C6BFE6325AF17F000D49D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C6BFE6825AF17F000D49D3E /* WheatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C6BFE6C25AF17F000D49D3E /* WheatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherTests.swift; sourceTree = "<group>"; };
 		6C6BFE6E25AF17F000D49D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C6BFE7325AF17F000D49D3E /* WheatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C6BFE7725AF17F000D49D3E /* WheatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherUITests.swift; sourceTree = "<group>"; };
@@ -73,6 +74,9 @@
 		6C6BFEE825B6D2C100D49D3E /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		6C6BFEED25B6D36400D49D3E /* MockWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherRepository.swift; sourceTree = "<group>"; };
 		6C6BFEF525B6D44C00D49D3E /* MockWeatherRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherRepositoryTests.swift; sourceTree = "<group>"; };
+		6C6BFEFA25B6DC7600D49D3E /* AssemblerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblerTests.swift; sourceTree = "<group>"; };
+		6C6BFF0225B6DEB900D49D3E /* OnlineWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineWeatherRepository.swift; sourceTree = "<group>"; };
+		6C6BFF0725B6DEE500D49D3E /* OnlinePlacesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlinePlacesRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +145,8 @@
 			children = (
 				6C6BFED825B6C6F400D49D3E /* Repositories */,
 				6C6BFEC625AF7EA000D49D3E /* Scenes */,
-				6C6BFE6C25AF17F000D49D3E /* WheatherTests.swift */,
 				6C6BFEC125AF61B400D49D3E /* AppCoordinatorTests.swift */,
+				6C6BFEFA25B6DC7600D49D3E /* AssemblerTests.swift */,
 				6C6BFE6E25AF17F000D49D3E /* Info.plist */,
 			);
 			path = WheatherTests;
@@ -247,6 +251,7 @@
 			children = (
 				6C6BFED325B6C6BC00D49D3E /* PlacesRepository.swift */,
 				6C6BFEDC25B6C79700D49D3E /* MockPlacesRepository.swift */,
+				6C6BFF0725B6DEE500D49D3E /* OnlinePlacesRepository.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			children = (
 				6C6BFEE825B6D2C100D49D3E /* WeatherRepository.swift */,
 				6C6BFEED25B6D36400D49D3E /* MockWeatherRepository.swift */,
+				6C6BFF0225B6DEB900D49D3E /* OnlineWeatherRepository.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 				6C6BFEEE25B6D36400D49D3E /* MockWeatherRepository.swift in Sources */,
 				6C6BFEAA25AF36CF00D49D3E /* AppCoordinator.swift in Sources */,
 				6C6BFE9F25AF345C00D49D3E /* AssembleMode.swift in Sources */,
+				6C6BFF0825B6DEE500D49D3E /* OnlinePlacesRepository.swift in Sources */,
 				6C6BFEDD25B6C79700D49D3E /* MockPlacesRepository.swift in Sources */,
 				6C6BFEBD25AF387F00D49D3E /* PlaceDetailsViewController.swift in Sources */,
 				6C6BFED425B6C6BC00D49D3E /* PlacesRepository.swift in Sources */,
@@ -402,6 +409,7 @@
 				6C6BFECF25AF7F6D00D49D3E /* WeatherSnapsot.swift in Sources */,
 				6C6BFEB825AF385300D49D3E /* PlacesListViewController.swift in Sources */,
 				6C6BFEA425AF349B00D49D3E /* AppAssembler.swift in Sources */,
+				6C6BFF0325B6DEB900D49D3E /* OnlineWeatherRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,10 +417,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C6BFEFB25B6DC7600D49D3E /* AssemblerTests.swift in Sources */,
 				6C6BFEF625B6D44C00D49D3E /* MockWeatherRepositoryTests.swift in Sources */,
 				6C6BFEE225B6C7EC00D49D3E /* MockPlacesRepositoryTests.swift in Sources */,
 				6C6BFEC225AF61B400D49D3E /* AppCoordinatorTests.swift in Sources */,
-				6C6BFE6D25AF17F000D49D3E /* WheatherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

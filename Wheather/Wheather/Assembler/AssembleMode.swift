@@ -8,6 +8,6 @@
 import Foundation
 
 enum AssembleMode {
-    case normal
-    case offline
+    case online
+    case mock
 }

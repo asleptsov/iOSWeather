@@ -9,10 +9,41 @@ import Foundation
 
 class AppAssembler {
     
-    init() {
+    private (set) var placesRepository: PlacesRepository!
+    private (set) var weatherRepository: WeatherRepository!
+    
+    private let onlinePlacesRepository: PlacesRepository
+    private let mockPlacesRepository: PlacesRepository
+    private let onlineWeatherRepository: WeatherRepository
+    private let mockWeatherRepository: WeatherRepository
+    
+    init(onlinePlacesRepository: PlacesRepository,
+         mockPlacesRepository: PlacesRepository,
+         onlineWeatherRepository: WeatherRepository,
+         mockWeatherRepository: WeatherRepository) {
+        self.onlinePlacesRepository = onlinePlacesRepository
+        self.mockPlacesRepository = mockPlacesRepository
+        self.onlineWeatherRepository = onlineWeatherRepository
+        self.mockWeatherRepository = mockWeatherRepository
     }
     
-    func assemble(with mode: AssembleMode) {        
+    func assemble(with mode: AssembleMode) {
+        switch mode {
+        case .mock:
+            assembleForMock()
+        case .online:
+            assembleForOnline()
+        }
+    }
+    
+    private func assembleForMock() {
+        placesRepository = mockPlacesRepository
+        weatherRepository = mockWeatherRepository
+    }
+    
+    private func assembleForOnline() {
+        placesRepository = onlinePlacesRepository
+        weatherRepository = onlineWeatherRepository
     }
     
 }

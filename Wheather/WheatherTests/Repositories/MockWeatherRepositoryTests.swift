@@ -10,7 +10,7 @@ import XCTest
 
 class MockWeatherRepositoryTests: XCTestCase {
 
-    func testExample() {
+    func testDataIsReceived() {
         let sut: WeatherRepository = MockWeatherRepository()
         
         let lat = 55.9
