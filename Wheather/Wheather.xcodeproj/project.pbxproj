@@ -26,6 +26,7 @@
 		6C6BFEE225B6C7EC00D49D3E /* MockPlacesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEE125B6C7EC00D49D3E /* MockPlacesRepositoryTests.swift */; };
 		6C6BFEE925B6D2C100D49D3E /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEE825B6D2C100D49D3E /* WeatherRepository.swift */; };
 		6C6BFEEE25B6D36400D49D3E /* MockWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEED25B6D36400D49D3E /* MockWeatherRepository.swift */; };
+		6C6BFEF625B6D44C00D49D3E /* MockWeatherRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEF525B6D44C00D49D3E /* MockWeatherRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		6C6BFEE125B6C7EC00D49D3E /* MockPlacesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlacesRepositoryTests.swift; sourceTree = "<group>"; };
 		6C6BFEE825B6D2C100D49D3E /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		6C6BFEED25B6D36400D49D3E /* MockWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherRepository.swift; sourceTree = "<group>"; };
+		6C6BFEF525B6D44C00D49D3E /* MockWeatherRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				6C6BFEE125B6C7EC00D49D3E /* MockPlacesRepositoryTests.swift */,
+				6C6BFEF525B6D44C00D49D3E /* MockWeatherRepositoryTests.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C6BFEF625B6D44C00D49D3E /* MockWeatherRepositoryTests.swift in Sources */,
 				6C6BFEE225B6C7EC00D49D3E /* MockPlacesRepositoryTests.swift in Sources */,
 				6C6BFEC225AF61B400D49D3E /* AppCoordinatorTests.swift in Sources */,
 				6C6BFE6D25AF17F000D49D3E /* WheatherTests.swift in Sources */,
