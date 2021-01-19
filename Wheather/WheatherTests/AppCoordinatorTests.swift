@@ -12,7 +12,7 @@ import XCTest
 
 class AppCoordinatorTests: XCTestCase {
             
-    func testOnboarding() throws {
+    func testOnboarding() {
         let rootViewController = UIViewController()
         let sut = AppCoordinator(with: rootViewController)
         XCTAssert(sut.rootViewController == rootViewController, "Root view controller is incorrect")
@@ -21,7 +21,7 @@ class AppCoordinatorTests: XCTestCase {
         XCTAssert(sut.topViewController is OnboardingViewController, "Top view controller should be OnboardingViewController")
     }
     
-    func testPlaces() throws {
+    func testPlaces() {
         let rootViewController = UIViewController()
         let sut = AppCoordinator(with: rootViewController)
         XCTAssert(sut.rootViewController == rootViewController, "Root view controller is incorrect")
@@ -30,7 +30,7 @@ class AppCoordinatorTests: XCTestCase {
         XCTAssert(sut.topViewController is PlacesListViewController, "Top view controller should be PlacesListViewController")
     }
     
-    func testPlaceDetails() throws {
+    func testPlaceDetails() {
         let rootViewController = UIViewController()
         let sut = AppCoordinator(with: rootViewController)
         XCTAssert(sut.rootViewController == rootViewController, "Root view controller is incorrect")
