@@ -9,5 +9,6 @@ import Foundation
 
 enum AssembleMode {
     case online
-    case mock
+    case mockAll
+    case mockPlaces
 }

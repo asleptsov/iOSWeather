@@ -24,17 +24,31 @@ class AssemblerTests: XCTestCase {
                   "Weather repository should be OnlineWeatherRepository")
     }
     
-    func testAssemblyForMock() {
+    func testAssemblyForMockAll() {
         let sut = AppAssembler(onlinePlacesRepository: OnlinePlacesRepository(),
                                mockPlacesRepository: MockPlacesRepository(),
                                onlineWeatherRepository: OnlineWeatherRepository(),
                                mockWeatherRepository: MockWeatherRepository())
         
-        sut.assemble(with: .mock)
+        sut.assemble(with: .mockAll)
         
         XCTAssert(sut.placesRepository is MockPlacesRepository,
                   "Places repository should be MockPlacesRepository")
         XCTAssert(sut.weatherRepository is MockWeatherRepository,
                   "Weather repository should be MockWeatherRepository")
+    }
+    
+    func testAssemblyForMockPlaces() {
+        let sut = AppAssembler(onlinePlacesRepository: OnlinePlacesRepository(),
+                               mockPlacesRepository: MockPlacesRepository(),
+                               onlineWeatherRepository: OnlineWeatherRepository(),
+                               mockWeatherRepository: MockWeatherRepository())
+        
+        sut.assemble(with: .mockPlaces)
+        
+        XCTAssert(sut.placesRepository is MockPlacesRepository,
+                  "Places repository should be MockPlacesRepository")
+        XCTAssert(sut.weatherRepository is OnlineWeatherRepository,
+                  "Weather repository should be OnlineWeatherRepository")
     }
 }

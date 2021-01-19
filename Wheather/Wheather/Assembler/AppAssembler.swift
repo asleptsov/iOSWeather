@@ -29,20 +29,27 @@ class AppAssembler {
     
     func assemble(with mode: AssembleMode) {
         switch mode {
-        case .mock:
-            assembleForMock()
+        case .mockAll:
+            assembleForMockAll()
+        case .mockPlaces:
+            assembleForMockPlaces()
         case .online:
             assembleForOnline()
         }
     }
     
-    private func assembleForMock() {
+    private func assembleForMockAll() {
         placesRepository = mockPlacesRepository
         weatherRepository = mockWeatherRepository
     }
     
     private func assembleForOnline() {
         placesRepository = onlinePlacesRepository
+        weatherRepository = onlineWeatherRepository
+    }
+    
+    private func assembleForMockPlaces() {
+        placesRepository = mockPlacesRepository
         weatherRepository = onlineWeatherRepository
     }
     
