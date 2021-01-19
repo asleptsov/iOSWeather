@@ -1,5 +1,5 @@
 //
-//  PlacesRepositoryTests.swift
+//  MockPlacesRepositoryTests.swift
 //  WheatherTests
 //
 //  Created by Anton Sleptsov on 19.01.2021.
@@ -8,9 +8,9 @@
 import XCTest
 @testable import Wheather
 
-class PlacesRepositoryTests: XCTestCase {
+class MockPlacesRepositoryTests: XCTestCase {
 
-    func testMockAmount() {
+    func testAmount() {
         let placesCountExpected = 3
         let sut: PlacesRepository = MockPlacesRepository()
         
@@ -28,7 +28,7 @@ class PlacesRepositoryTests: XCTestCase {
         wait(for: [expectation], timeout: 1)
     }
     
-    func testMockUniquePlaces() {
+    func testUniquePlaces() {
         let sut: PlacesRepository = MockPlacesRepository()
         
         let expectation = XCTestExpectation(description: "Places are not loaded")
