@@ -21,6 +21,9 @@
 		6C6BFEC225AF61B400D49D3E /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEC125AF61B400D49D3E /* AppCoordinatorTests.swift */; };
 		6C6BFECA25AF7F1700D49D3E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEC925AF7F1700D49D3E /* Place.swift */; };
 		6C6BFECF25AF7F6D00D49D3E /* WeatherSnapsot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFECE25AF7F6D00D49D3E /* WeatherSnapsot.swift */; };
+		6C6BFED425B6C6BC00D49D3E /* PlacesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFED325B6C6BC00D49D3E /* PlacesRepository.swift */; };
+		6C6BFEDD25B6C79700D49D3E /* MockPlacesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEDC25B6C79700D49D3E /* MockPlacesRepository.swift */; };
+		6C6BFEE225B6C7EC00D49D3E /* PlacesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BFEE125B6C7EC00D49D3E /* PlacesRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		6C6BFEC125AF61B400D49D3E /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 		6C6BFEC925AF7F1700D49D3E /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		6C6BFECE25AF7F6D00D49D3E /* WeatherSnapsot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSnapsot.swift; sourceTree = "<group>"; };
+		6C6BFED325B6C6BC00D49D3E /* PlacesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesRepository.swift; sourceTree = "<group>"; };
+		6C6BFEDC25B6C79700D49D3E /* MockPlacesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlacesRepository.swift; sourceTree = "<group>"; };
+		6C6BFEE125B6C7EC00D49D3E /* PlacesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 		6C6BFE6B25AF17F000D49D3E /* WheatherTests */ = {
 			isa = PBXGroup;
 			children = (
+				6C6BFED825B6C6F400D49D3E /* Repositories */,
 				6C6BFEC625AF7EA000D49D3E /* Scenes */,
 				6C6BFE6C25AF17F000D49D3E /* WheatherTests.swift */,
 				6C6BFEC125AF61B400D49D3E /* AppCoordinatorTests.swift */,
@@ -205,6 +212,8 @@
 		6C6BFEC725AF7EDF00D49D3E /* Data providers */ = {
 			isa = PBXGroup;
 			children = (
+				6C6BFED325B6C6BC00D49D3E /* PlacesRepository.swift */,
+				6C6BFEDC25B6C79700D49D3E /* MockPlacesRepository.swift */,
 			);
 			path = "Data providers";
 			sourceTree = "<group>";
@@ -216,6 +225,14 @@
 				6C6BFECE25AF7F6D00D49D3E /* WeatherSnapsot.swift */,
 			);
 			path = "Data models";
+			sourceTree = "<group>";
+		};
+		6C6BFED825B6C6F400D49D3E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6C6BFEE125B6C7EC00D49D3E /* PlacesRepositoryTests.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,7 +366,9 @@
 			files = (
 				6C6BFEAA25AF36CF00D49D3E /* AppCoordinator.swift in Sources */,
 				6C6BFE9F25AF345C00D49D3E /* AssembleMode.swift in Sources */,
+				6C6BFEDD25B6C79700D49D3E /* MockPlacesRepository.swift in Sources */,
 				6C6BFEBD25AF387F00D49D3E /* PlaceDetailsViewController.swift in Sources */,
+				6C6BFED425B6C6BC00D49D3E /* PlacesRepository.swift in Sources */,
 				6C6BFECA25AF7F1700D49D3E /* Place.swift in Sources */,
 				6C6BFEB325AF381F00D49D3E /* OnboardingViewController.swift in Sources */,
 				6C6BFE5625AF17EF00D49D3E /* AppDelegate.swift in Sources */,
@@ -363,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C6BFEE225B6C7EC00D49D3E /* PlacesRepositoryTests.swift in Sources */,
 				6C6BFEC225AF61B400D49D3E /* AppCoordinatorTests.swift in Sources */,
 				6C6BFE6D25AF17F000D49D3E /* WheatherTests.swift in Sources */,
 			);
